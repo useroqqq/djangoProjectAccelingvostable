@@ -1,18 +1,25 @@
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизация</title>
+    <style>
+        body {
+            background-image: url('/static/Data/background.jpg');
+            background-size: cover;
+            font-family: "Times New Roman", Times, serif;
+        }
+    </style>
+</head>
 
-    <h1> Login here </h1>
+<h1> Авторизация </h1>
 
-    <form method="POST" autocomplete="off">
+<form method="POST" autocomplete="off">
 
-        {% csrf_token %}
+    {% csrf_token %}
 
-        {{loginform.as_p}}
+    {{ loginform.as_p }}
 
-        <input type="submit" value="Login"/>
+    <input type="submit" value="Login"/>
 
-
-    </form>
-
-
-
+</form>
 </html>
